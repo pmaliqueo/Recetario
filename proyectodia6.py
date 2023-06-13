@@ -26,9 +26,9 @@ def menu(nombre):
 #Se realiza función de opcion1 para visualizar las Recetas
 def opcion1():
     eleccion = input(f"\npor favor elije una de las opciones anteriores:")
+    system("clear")
     while eleccion != "6":
         if eleccion == "1":
-            system("clear")
             elegir_categoria = os.listdir(ruta)
             valores = {}
             for indice, elemento in enumerate(elegir_categoria, start=1):
@@ -36,7 +36,7 @@ def opcion1():
                 valores[clave] = elemento
                 print(f"{indice}: {elemento}")
 
-            elegir_categoria = input("Elegir categoria: ")
+            elegir_categoria = input("Escribe el nombre de la categoria que deseas ver: ")
             eleccion_de_categoria = os.path.join(ruta, elegir_categoria)
             if os.path.exists(eleccion_de_categoria):
                 print("\nLas recetas para ver son las siguientes:  \n")
