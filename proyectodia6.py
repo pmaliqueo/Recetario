@@ -97,6 +97,13 @@ def opcion2(eleccion):
                 nueva_receta = open(receta_creada,"a")
                 nueva_receta.write(f"{contenido_receta}")
                 nueva_receta.close()
+                print(f"Nueva receta creada: {nombre_receta}")
+                volver = input("\nDeseas volver al menú? (Y/N): ")
+                if volver.upper() == "Y":
+                    system("clear")
+                    menu(nombre)
+                    opcion1()
+                    break
             else:
                 print("Ingresa una opción válida")
         break
