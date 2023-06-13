@@ -120,9 +120,9 @@ def opcion3(eleccion):
                 print(f"Nueva Categoria creada: {nueva_categoria}")
         volver = input("\nDeseas volver al menú? (Y/N): ")
         if volver.upper() == "Y":
+            system("clear")
             menu(nombre)
             opcion1()
-            system("clear")
             break
         else:
             print("Adios, Muchas Gracias por participar!")
@@ -156,6 +156,7 @@ def opcion4(eleccion):
                     print("No se encuentra archivo")
                 volver = input("\nDeseas volver al menú? (Y/N): ")
                 if volver.upper() == "Y":
+                    system("clear")
                     menu(nombre)
                     opcion1()
                     break
@@ -183,9 +184,9 @@ def opcion5(eleccion):
                 print("No se encuentra Categoria")
         volver = input("\nDeseas volver al menú? (Y/N): ")
         if volver.upper() == "Y":
+            system("clear")
             menu(nombre)
             opcion1()
-            system("clear")
             break
         else:
             print("Adios, Muchas Gracias por participar!")
